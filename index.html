@@ -6,6 +6,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="src/img/favicon-32x32.png">
   <title>Frontend Mentor | Results summary component</title>
   <link rel="stylesheet" href="src/css/reset.css">
+  <link rel="stylesheet" href="src/css/variables.css">
   <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
@@ -14,32 +15,44 @@
     <div class="container">
       <div class="primary">
         <h2 class="title">Your Result</h2>
-        <p class="score">76 <div class="break-row">of 100</div></p>
+        <p class="score">76 <span class="break-row">of 100</span></p>
         <h3 class="subtitle">Great</h3>
         <p class="description">You scored higher than 65% of the people who have taken these tests.</p>
       </div>
       <div class="secondary">
         <h2 class="title">Summary</h2>
         <ul class="stats">
-          <li class="stats-item">
-            <img src="src/img/icon-reaction.svg" alt="Reaction Icon">
-            <h3>Reaction</h3>
-            <p>80 / 100</p>
+
+          <li class="stats-item reaction-item">
+            <div>
+              <img src="src/img/icon-reaction.svg" alt="Icon Reaction">
+              <h3>Reaction</h3>
+            </div>
+            <p><span class="bold">80</span> / 100</p>
           </li>
-          <li class="stats-item">
-            <img src="src/img/icon-memory.svg" alt="Reaction Icon">
-            <h3>Memory</h3>
-            <p>92 / 100</p>
+
+          <li class="stats-item memory-item">
+            <div>
+              <img src="src/img/icon-memory.svg" alt="Icon Memory">
+              <h3>Memory</h3>
+            </div>
+            <p><span class="bold">92</span> / 100</p>
           </li>
-          <li class="stats-item">
-            <img src="src/img/icon-verbal.svg" alt="Reaction Icon">
-            <h3>Verbal</h3>
-            <p>61 / 100</p>
+
+          <li class="stats-item verbal-item">
+            <div>
+              <img src="src/img/icon-verbal.svg" alt="Icon Verbal">
+              <h3>Verbal</h3>
+            </div>
+            <p><span class="bold">61</span> / 100</p>
           </li>
-          <li class="stats-item">
-            <img src="src/img/icon-visual.svg" alt="Reaction Icon">
-            <h3>Visual</h3>
-            <p>72 / 100</p>
+
+          <li class="stats-item visual-item">
+            <div>
+              <img src="src/img/icon-visual.svg" alt="Icon Visual">
+              <h3>Visual</h3>
+            </div>
+            <p><span class="bold">72</span> / 100</p>
           </li>
         </ul>
         <a href="#" class="btn">Continue</a>
